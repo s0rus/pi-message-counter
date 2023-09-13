@@ -35,6 +35,12 @@ dependencies:
   morgan:
     specifier: ^1.10.0
     version: 1.10.0
+  onoff:
+    specifier: ^6.0.3
+    version: 6.0.3
+  raspberrypi-liquid-crystal:
+    specifier: ^1.19.0
+    version: 1.19.0
 
 devDependencies:
   '@types/cors':
@@ -2223,6 +2229,15 @@ packages:
       toidentifier: 1.0.1
     dev: false
 
+  /i2c-bus@5.2.3:
+    resolution: {integrity: sha512-kzFgU0OSIZlaeUUa+VK7L+kkxnj4feimCVQDOPrzj0cTaB+hNweTsO8/j7QvW2gRgWQ7ds5IpfFjpBrX+fMNng==}
+    engines: {node: '>=10.0.0'}
+    requiresBuild: true
+    dependencies:
+      bindings: 1.5.0
+      nan: 2.17.0
+    dev: false
+
   /iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
     engines: {node: '>=0.10.0'}
@@ -2947,6 +2962,13 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
+  /raspberrypi-liquid-crystal@1.19.0:
+    resolution: {integrity: sha512-LFHvY6Umc+A9WPcfVV+rKPx+RGikh5PW64ekxLnMYp6TXrQ3m6PTkHbP/s3mPJ7jPYWY6JMj2/Ks+c4dmrf1fw==}
+    dependencies:
+      i2c-bus: 5.2.3
+      sleep: 6.3.0
+    dev: false
+
   /raw-body@2.5.1:
     resolution: {integrity: sha512-qqJBtEyVgS0ZmPGdCFPWJ3FreoqvG4MVQln/kCgF7Olq95IbOp0/BWyMwbdtn4VTvkM8Y7khCQ2Xgk/tcrCXig==}
     engines: {node: '>= 0.8'}
@@ -3137,6 +3159,14 @@ packages:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
     dev: true
+
+  /sleep@6.3.0:
+    resolution: {integrity: sha512-+WgYl951qdUlb1iS97UvQ01pkauoBK9ML9I/CMPg41v0Ze4EyMlTgFTDDo32iYj98IYqxIjDMRd+L71lawFfpQ==}
+    engines: {node: '>=0.8.0'}
+    requiresBuild: true
+    dependencies:
+      nan: 2.17.0
+    dev: false
 
   /source-map-support@0.5.21:
     resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==}
