@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get<Record<string, never>, MessageResponse>('/', (_req, res) => {
   res.json({
-    message: 'API - 👋🌎🌍🌏',
+    message: '🔥',
   });
 });
 
