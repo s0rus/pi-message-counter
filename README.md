@@ -1,6 +1,6 @@
 ## pi-message-counter
 
-Cool little project that displays the current and all time message count (the message count is aggregated by separate bot which is private) of a discord server using a "RaspberryPI 4 B 2GB" and "GJD 1602IIC" LCD display.
+Cool little project that displays the current and all time message count (the message count is aggregated by separate bot which is private) of a discord server using a "RaspberryPI 4B 2GB" and "GJD 1602IIC" LCD display.
 
 ### Local development
 
@@ -22,3 +22,5 @@ Then, to get the address of the LCD screen, run `sudo i2cdetect -y 1`.
 You can change the address in `src/components/write-to-lcd.ts`;
 
 It should be `0x27` by default, but it was `0x3f` in my case.
+
+![IMG_20230918_121204](https://github.com/s0rus/pi-message-counter/assets/45129985/4bc886a3-5cf4-458b-832a-acd646585a1a)
